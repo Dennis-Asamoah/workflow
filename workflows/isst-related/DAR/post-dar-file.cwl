@@ -3,7 +3,7 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull: repomanager.lcsb.uni.lu:9999/curlimages/curl:8.8.0
+    dockerPull: localhost:5000/curl:8.8.0
   WorkReuse:
     enableReuse: false
 

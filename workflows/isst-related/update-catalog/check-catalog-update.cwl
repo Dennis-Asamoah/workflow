@@ -3,7 +3,7 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull: repomanager.lcsb.uni.lu:9999/curlimages/curl
+    dockerPull: localhost:5000/curl
   InlineJavascriptRequirement: {}
   NetworkAccess:
     networkAccess: true
