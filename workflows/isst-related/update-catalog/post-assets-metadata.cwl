@@ -3,7 +3,7 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/iderha-mdc-management
+    dockerPull: localhost:5000/iderha-mdc-management:latest
 
 inputs:
   assetsMetadataFile:

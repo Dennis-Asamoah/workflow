@@ -4,7 +4,7 @@ doc: "Loads a DCAT containing a catalog and adds the location of required policy
 
 requirements:
   DockerRequirement:
-    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/iderha-mdc-management
+    dockerPull: localhost:5000/iderha-mdc-management
 
 hints:
   RemoteLocationRequirement:
