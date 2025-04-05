@@ -29,4 +29,4 @@ outputs:
     outputBinding:
       glob: output.txt
 
-baseCommand: ["/app/edc_client.sh"]
+baseCommand: ["python3", "./app/edc_client.py"]
