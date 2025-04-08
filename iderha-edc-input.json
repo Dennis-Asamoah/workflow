@@ -1,6 +1,6 @@
 {
     "ASSET_ID": "e38bb74b-2000-46f6-8078-db3f28152bcb",
-    "EDC_CONSUMER_ID": "iderha-mdc",
+    "EDC_CONSUMER_ID": "7f78fc8c-2c6b-47fb-9351-9f182637c38d",
     "EDC_PROVIDER_ID": "7f78fc8c-2c6b-47fb-9351-9f182637c38d",
     "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
     "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
