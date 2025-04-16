@@ -4,10 +4,8 @@
     "EDC_PROVIDER_ID": "7f78fc8c-2c6b-47fb-9351-9f182637c38d",
     "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
     "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
-    "DATA_DESTINATION_URL": "http://echo-server:8080/",
-    "FTP_DATA_ADDRESS": "http://echo-server:8080/",
+    "DATA_DESTINATION_URL": "http://echo-server:8080",
+    "FTP_DATA_ADDRESS": "data-upload/isst-data-iderha-remote-node-1-test.txt",
     "OUTPUT_FILE": "/tmp/output",
-    "GATEWAY_ADDRESS": "http://gateway-service:5000",
-    "TRANSFER_TYPE": "push",
-    "X_API_KEY": "password"
+    "GATEWAY_ADDRESS": "http://gateway-service:5000"
 }
