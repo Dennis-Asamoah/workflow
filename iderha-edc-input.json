@@ -5,7 +5,7 @@
     "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
     "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
     "DATA_DESTINATION_URL": "http://echo-server:8080/",
-    "FTP_DATA_ADDRESS": "http://service-upload:8080/api/s3/upload",
+    "FTP_DATA_ADDRESS": "http://echo-server:8080/",
     "OUTPUT_FILE": "/tmp/output",
     "GATEWAY_ADDRESS": "http://gateway-service:5000",
     "TRANSFER_TYPE": "push",
