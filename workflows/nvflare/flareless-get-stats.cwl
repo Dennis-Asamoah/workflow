@@ -3,7 +3,7 @@ class: CommandLineTool
 doc: Running exploratory analysis without Nvidia Flare
 requirements:
   DockerRequirement:
-    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/flareless-analysis
+    dockerPull: localhost:5000/flareless-analysis
   WorkReuse:
     enableReuse: false
 
