@@ -46,9 +46,9 @@ outputs:
 steps:
   subworkflow:
     in:
-      datasetRequest: datasets
+      datasets: datasets
     out: ["logs" , "output_file"]
-    scatter: datasetRequest
+    scatter: datasets
     run: flareless-node-subworkflow.cwl
 
 
