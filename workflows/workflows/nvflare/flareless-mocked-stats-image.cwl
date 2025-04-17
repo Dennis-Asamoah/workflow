@@ -8,14 +8,15 @@ requirements:
   ScatterFeatureRequirement: {}
 
 inputs:
-  datasetRequests:
+  datasets:
     type:
       type: array
-      items: File
-  locations:
-    type:
-      type: array
-      items: string
+      items:
+        type: record
+        fields:
+          assetId: int?
+          location: string
+
 
   # Graph parameters
   legend:
@@ -49,12 +50,11 @@ outputs:
 steps:
   subworkflow:
     in:
-      datasetRequest: datasetRequests
-      location: locations
+      datasetRequest: datasets
     out: ["logs" , "output_file"]
-    scatter: [datasetRequest, location]
-    scatterMethod: dotproduct
-    run: flareless-node-subworkflow.cwl
+    scatter: datasetRequest
+    run: flareless-node-mocked-subworkflow.cwl
+
 
   mergeStats:
     run: flareless-merge.cwl

@@ -5,11 +5,19 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
 
+hints:
+  RemoteLocationRequirement:
+    nodeUri: $(inputs.datasetRequest.location)
+
 inputs:
   datasetRequest:
-    type: File
-  location:
-    type: string
+    type:
+      type: record
+      fields:
+        assetId:
+          type: int?
+        location:
+          type: string
 
 outputs:
   logs:
@@ -22,10 +30,11 @@ outputs:
 steps:
   pullData:
     in:
-      datasetRequest: datasetRequest
-      location: location
+      client: datasetRequest
+      datasetId:
+        valueFrom: $(inputs.client.assetId)
     out: [dataset]
-    run: edc-pull-data-subworkflow.cwl
+    run: create_conditions.cwl
 
   getStats:
     hints:
@@ -34,5 +43,4 @@ steps:
     run: flareless-get-stats.cwl
     in:
       data_files: pullData/dataset
-      location: location
     out: [ "logs" , "output_file" ]

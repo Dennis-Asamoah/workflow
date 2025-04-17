@@ -2,9 +2,10 @@ cwlVersion: v1.2
 class: Workflow
 
 inputs:
-  dataset:
+  datasetRequest:
     type: File
-
+  location:
+    type: string
 
 outputs:
   dataset:
@@ -14,12 +15,14 @@ outputs:
 steps:
   pullData:
     in:
-      dataset: dataset
+      datasetRequest: datasetRequest
+      location: location
     out: [datasetLocation]
     run: edc-pull-data.cwl
 
   cleanData:
     in:
-      dataset: pullData/datasetLocation
+      dataFile: pullData/datasetLocation
+      location: location
     out: [cleanedFile]
     run: clean-edc-data.cwl
