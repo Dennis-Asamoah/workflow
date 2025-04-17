@@ -2,7 +2,7 @@ cwlVersion: v1.2
 class: CommandLineTool
 requirements:
   DockerRequirement:
-    dockerPull: localhost:5000/flareless-analysis
+    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/flareless-analysis
   WorkReuse:
     enableReuse: false
 

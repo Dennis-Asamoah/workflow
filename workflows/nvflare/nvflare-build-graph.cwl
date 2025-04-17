@@ -3,7 +3,7 @@ class: CommandLineTool
 doc: Building figure based on NVidia Flare results
 requirements:
   DockerRequirement:
-    dockerPull: localhost:5000/nvflare-build-graph
+    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/nvflare-build-graph
 
 inputs:
   stats:

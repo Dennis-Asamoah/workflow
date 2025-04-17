@@ -5,13 +5,19 @@ requirements:
   WorkReuse:
     enableReuse: false
   DockerRequirement:
-    dockerPull: localhost:5000/edc-client
+    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/edc-client
+
+hints:
+  RemoteLocationRequirement:
+    nodeUri: $(inputs.location)
 
 inputs:
   datasetRequest:
     type: File
     inputBinding:
       position: 1
+  location:
+    type: string
 
 outputs:
   datasetLocation:

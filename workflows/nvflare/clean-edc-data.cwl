@@ -3,7 +3,11 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull:  localhost:5000/omop-table-clean-header
+    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/omop-table-clean-header
+
+hints:
+  RemoteLocationRequirement:
+    nodeUri: $(inputs.location)
 
 inputs:
   dataFile:
@@ -15,6 +19,8 @@ inputs:
     default: condition_era.csv
     inputBinding:
       position: 2
+  location:
+    type: string
 
 outputs:
   cleanedFile:

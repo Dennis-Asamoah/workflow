@@ -8,6 +8,8 @@ requirements:
 inputs:
   datasetRequest:
     type: File
+  location:
+    type: string
 
 outputs:
   logs:
@@ -21,6 +23,7 @@ steps:
   pullData:
     in:
       datasetRequest: datasetRequest
+      location: location
     out: [dataset]
     run: edc-pull-data-subworkflow.cwl
 
@@ -31,4 +34,5 @@ steps:
     run: flareless-get-stats.cwl
     in:
       data_files: pullData/dataset
+      location: location
     out: [ "logs" , "output_file" ]

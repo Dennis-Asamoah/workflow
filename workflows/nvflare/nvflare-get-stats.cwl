@@ -3,7 +3,7 @@ class: CommandLineTool
 doc: Running exploratory analysis with NVidia Flare
 requirements:
   DockerRequirement:
-    dockerPull: localhost:5000/nvflare-admin
+    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/nvflare-admin
 
 inputs:
   data_files:
