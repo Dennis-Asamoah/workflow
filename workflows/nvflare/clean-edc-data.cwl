@@ -3,11 +3,7 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull: localhost:5000/omop-table-clean-header
-
-hints:
-  RemoteLocationRequirement:
-    nodeUri: $(inputs.location)
+    dockerPull:  localhost:5000/omop-table-clean-header
 
 inputs:
   dataFile:
@@ -19,8 +15,6 @@ inputs:
     default: condition_era.csv
     inputBinding:
       position: 2
-  location:
-    type: string
 
 outputs:
   cleanedFile:

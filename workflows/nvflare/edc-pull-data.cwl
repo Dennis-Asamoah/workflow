@@ -1,10 +1,6 @@
 cwlVersion: v1.2
 class: CommandLineTool
 
-hints:
-  RemoteLocationRequirement:
-    nodeUri: $(inputs.location)
-
 requirements:
   WorkReuse:
     enableReuse: false
@@ -12,7 +8,7 @@ requirements:
     dockerPull: localhost:5000/edc-client
 
 inputs:
-  dataset:
+  datasetRequest:
     type: File
     inputBinding:
       position: 1

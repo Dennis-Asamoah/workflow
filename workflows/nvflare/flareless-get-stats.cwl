@@ -7,14 +7,10 @@ requirements:
   WorkReuse:
     enableReuse: false
 
-hints:
-  RemoteLocationRequirement:
-    nodeUri: $(inputs.location)
-
 
 inputs:
   location:
-    type: string
+    type: string?
     inputBinding:
       prefix: --location
   data_files:

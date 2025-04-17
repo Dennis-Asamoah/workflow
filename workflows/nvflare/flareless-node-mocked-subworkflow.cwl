@@ -5,9 +5,19 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
 
+hints:
+  RemoteLocationRequirement:
+    nodeUri: $(inputs.datasetRequest.location)
+
 inputs:
   datasetRequest:
-    type: File
+    type:
+      type: record
+      fields:
+        assetId:
+          type: int?
+        location:
+          type: string
 
 outputs:
   logs:
@@ -20,9 +30,11 @@ outputs:
 steps:
   pullData:
     in:
-      datasetRequest: datasetRequest
+      client: datasetRequest
+      datasetId:
+        valueFrom: $(inputs.client.assetId)
     out: [dataset]
-    run: edc-pull-data-subworkflow.cwl
+    run: create_conditions.cwl
 
   getStats:
     hints:

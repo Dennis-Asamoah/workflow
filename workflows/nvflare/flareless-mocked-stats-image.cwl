@@ -11,7 +11,11 @@ inputs:
   datasets:
     type:
       type: array
-      items: File
+      items:
+        type: record
+        fields:
+          assetId: int?
+          location: string
 
 
   # Graph parameters
@@ -49,7 +53,7 @@ steps:
       datasetRequest: datasets
     out: ["logs" , "output_file"]
     scatter: datasetRequest
-    run: flareless-node-subworkflow.cwl
+    run: flareless-node-mocked-subworkflow.cwl
 
 
   mergeStats:

@@ -7,13 +7,7 @@ requirements:
   WorkReuse:
     enableReuse: false
 
-hints:
-  RemoteLocationRequirement:
-    nodeUri: $(inputs.location)
-
 inputs:
-  location:
-    type: string
   datasetId:
     type: int?
     inputBinding:
