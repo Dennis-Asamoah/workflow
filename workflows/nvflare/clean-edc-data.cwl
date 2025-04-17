@@ -3,7 +3,7 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull: gitlab.lcsb.uni.lu:4567/luca.bolzani/iderha-test-deployment/omop-table-clean-header
+    dockerPull: localhost:5000/omop-table-clean-header
 
 hints:
   RemoteLocationRequirement:
