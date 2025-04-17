@@ -6,7 +6,7 @@
     "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
     "DATA_DESTINATION_URL": "http://service-upload:8080/api/s3/upload",
     "EDC_CONSUMER_MANAGEMENT_URL": "http://edc-consumer:29193/management",
-    "FTP_DATA_ADDRESS": "data-upload/isst-data-iderha-remote-node-1-test.txt",
+    "FTP_DATA_ADDRESS": "http://service-upload:8080/api/s3/upload",
     "OUTPUT_FILE": "/tmp/output",
     "GATEWAY_ADDRESS": "http://gateway-service:5000"
 }
