@@ -7,6 +7,6 @@
     "DATA_DESTINATION_URL": "http://service-upload:8080/api/s3/upload",
     "EDC_CONSUMER_MANAGEMENT_URL": "http://edc-consumer:29193/management",
     "FTP_DATA_ADDRESS": "http://service-upload:8080/api/s3/upload",
-    "OUTPUT_FILE": "/tmp/output",
+    "OUTPUT_FILE": "output.txt",
     "GATEWAY_ADDRESS": "http://gateway-service:5000"
 }
