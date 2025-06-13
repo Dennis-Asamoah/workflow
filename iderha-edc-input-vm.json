@@ -1,0 +1,12 @@
+{
+    "ASSET_ID": "5d5f5d8a-50b7-460a-84f0-ab5d1236b9c1",
+    "EDC_CONSUMER_ID": "3e874057-cfe7-4d6a-9077-17bd29ebf128",
+    "EDC_PROVIDER_ID": "3e874057-cfe7-4d6a-9077-17bd29ebf128",
+    "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
+    "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
+    "DATA_DESTINATION_URL": "http://service-upload:8080/api/s3/upload",
+    "EDC_CONSUMER_MANAGEMENT_URL": "http://edc-consumer:29193/management",
+    "FTP_DATA_ADDRESS": "data-upload/isst-data-remote-node.txt",
+    "OUTPUT_FILE": "output.txt",
+    "GATEWAY_ADDRESS": "http://gateway-service:5000"
+}
