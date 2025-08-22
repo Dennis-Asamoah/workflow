@@ -1,6 +1,6 @@
 {
     "ASSET_ID": "6fcab746-5c0a-4aa1-8044-9f6ab63dff22",
-    "EDC_CONSUMER_ID": "3e874057-cfe7-4d6a-9077-17bd29ebf128",
+    "EDC_CONSUMER_ID": "a861ce2b-bb08-42e9-b3c9-00103f0a830d",
     "EDC_PROVIDER_ID": "provider",
     "EDC_PROVIDER_PROTOCOL_URL": "http://edc-provider:19194/protocol",
     "EDC_PROVIDER_PUBLIC_URL": "http://edc-provider:19291/public",
